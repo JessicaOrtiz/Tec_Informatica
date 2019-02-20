@@ -71,6 +71,11 @@ app.post('/material',function(req,res){
   res.json({'status' : 'OK'});
 });
 
+//app.delete('/material/clave', function(req, res){
+  //  db.initDB();
+    //console.log("Objeto borrado");
+//});
+
 app.listen(3000,function(){
   console.log("Started on PORT 3000");
 })
