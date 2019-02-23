@@ -1,5 +1,4 @@
 const urlServidor = 'http://localhost:3000';
-// const urlServidor = "https://gentle-escarpment-77629.herokuapp.com";
 var idUsuario = 0;
 
 $(function(){
