@@ -1,0 +1,76 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <title>Ajax</title>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.2/css/bootstrap.min.css" integrity="sha384-Smlep5jCw/wG7hdkwQ/Z5nLIefveQRIY9nfy6xoR1uRYBtpZgI6339F5dgvm/e9B" crossorigin="anonymous">
+  </head>
+  <body>
+    <div class="container">
+        <h1 class="text-center">API</h1>
+        <form class="form-group my-2" id="form-consultar" action="https://uinames.com/api/">
+          <fieldset class="form-group">
+            <h3>Genero</h3>
+            <div id="radio">
+            <div class="form-group">
+              <input type="radio" class="form-check-input" value="male" name="gender" id="male">
+              <label class="form-check-label">Masculino</label>
+            </div> <!--radio-->
+            <div class="form-group">
+              <input type="radio" class="form-check-input" value="female" name="gender" id="female">
+              <label class="form-check-label">Femenino</label>
+            </div> <!--radio-->
+            <div class="form-group">
+              <input type="radio" class="form-check-input" name="gender" id="aleatorio" value="">
+              <label class="form-check-label">Aleatorio</label>
+            </div> <!--radio-->
+            </div>
+          </fieldset>
+          <div class="form-group">
+            <label class="form-label">País</label>
+              <select class="form-control" id="region">
+                  <option>New Zealand</option>
+                  <option>Slovakia</option>
+                  <option>Romania</option>
+                  <option>France</option>
+                  <option>Turkey</option>
+                  <option>Mexico</option>
+                  <option>Italy</option>
+                  <option>China</option>
+                  <option>United States</option>
+                  <option>Greece</option>
+              </select>
+            </div>
+          <div class="form-group">
+            <label>Cantidad de nombres</label>
+            <input type="number" id="nombres" name="amount" class="form-control">
+          </div>
+          <input type="submit" class="btn btn-outline-primary" id="generar" name="Generar" value="Generar">
+        </form>
+      <div class="container">
+       <table class="table w-75" id="usuarios">
+         <tr id="encabezado">
+           <th>Nombre</th>
+           <th>Apellido</th>
+           <th>Género</th>
+           <th>Edad</th>
+           <th>Correo</th>
+           <th>Foto</th>
+         </tr>
+       </table>
+      </div> <!--container-->
+    </div>
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.3.1.js" integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60=" crossorigin="anonymous"></script>
+   <!-- <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>-->
+   <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script> 
+   <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.2/js/bootstrap.min.js" integrity="sha384-o+RDsa0aLu++PJvFqy8fFScvbHFLtbvScb8AjopnFD+iEQ7wo/CG0xlczd+2O/em" crossorigin="anonymous"></script>
+    <script src="app.js"></script>
+</body>
+</html>
