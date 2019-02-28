@@ -1,4 +1,4 @@
-<<<<<<< HEAD
+
 /*var clientid = 'e1bcbd51759b4068b116758051d8b9d6',
        userid = 2117516145,
        num_photos = 6;
@@ -78,55 +78,11 @@ $(function(){
     });*/
 });
 
+//Info para sacar los datos del perfil
+//https://rudrastyh.com/instagram/get-photos-and-profile-info-pure-javascript.html
 
-/*var token =  '' ,  // aprende cómo obtenerlo debajo del 
-    id_de_usuario =  2117516145 ,  // ID de usuario : obténlo en el código fuente de tu perfil de Instagram o mira el siguiente ejemplo :) 
-    num_photos =  4 ;  // cuantas fotos quieres conseguir*/
- 
-/*$.ajax ( { 
-	url :  'https://api.instagram.com/v1/users/'  + id_de_usuario +  '/media/reciente' ,  // o / usuarios / auto / media / Sandbox reciente para 
-	tipoDatos :  'jsonp' , 
-	escriba :  'GET' , 
-	datos :  { access_token : token , count : num_photos } , 
-	success :  function ( data ) { 
- 		console. log ( data ) ;
-		para ( x in datos. datos  ) { 
-			$ ( 'ul' ) . append ( '<li> <img src = "' + data. data [ x ] . images . low_resolution . url + '"> </li>' ) ;  // data.data [x] .images.low_resolution.url - URL de la imagen, 306х306 
-			// data.data [x] .images.thumbnail.url - URL de la imagen 150х150 
-			// data.data [x] .images. standard_resolution.url - URL de la imagen 612х612 
-			// data.data [x] .link - URL de publicación de Instagram 
-		} 
-	},
-	error :  función ( data ) { 
-   // console.log(data);  // enviar las notificaciones de error a la consola 
-	} 
-});*/
-=======
+//Obtener fotos
+//https://rudrastyh.com/instagram/get-photos-with-javascript.html#user_id
 
-const express =  require("express");
-
-$(function(){
-  var clientid = 'CLIENT ID',
-       userid = 290023231,
-       num_photos = 6;
-
-  $('#OK').on('submit', function(evento){
-    evento.preventDefault();
-    $.ajax({
-      url: 'https://api.instagram.com/v1/users/' + userid + '/media/recent',
-      dataType: 'jsonp',
-      type: 'GET',
-      data: {client_id: clientid, count: num_photos},
-      success: function(data){
-         console.log(data);
-        for( x in data.data ){
-          $('#galeria-instagram').append('<li><img src="'+data.data[x].images.thumbnail.url+'"></li>');
-        }
-      },
-      error: function(data){
-        console.log(data);
-      }
-    })
-  });
-});
->>>>>>> 565804cad4af4ebe9b2103232da386bcb171c464
+//Generar token
+//https://rudrastyh.com/tools/access-token?code=2d1a3949846443b1987440bd6fd64ca8
