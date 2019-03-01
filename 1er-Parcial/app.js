@@ -49,7 +49,7 @@ var request = require('request'); // "Request" library
           });
       }
     }
-
+    
     app.route("/")
   .get( (req, res) => {
     db.initDB();
