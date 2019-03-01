@@ -19,6 +19,49 @@ $.ajax({
   }
 });*/
 
+/*var express = require('express'); // Express web server framework
+var request = require('request'); // "Request" library
+    var cors = require('cors');
+    var querystring = require('querystring');
+    const bodyParser = require("body-parser");
+    var cookieParser = require('cookie-parser');
+    const usuarioArch = require('fs');
+    var archivo = "perfil.json";
+
+
+
+    var db = {
+      //Indicar BD o abrir conexion
+      initDB: function () {
+          var fs = require("fs");
+          var contents = fs.readFileSync(archivo);
+          this.usuario = JSON.parse(contents);
+          console.log(this.usuario);
+      },
+      saveUsuario : function(){
+        //console.log(this.usuario);
+        usuarioArch.writeFileSync(archivo, JSON.stringify(this.usuario),
+          function (error) {
+              if (error) {
+                  console.log('Hubo un error al escribir en el archivo')
+                  console.log(error);
+              }
+          });
+      }
+    }
+
+    app.route("/")
+  .get( (req, res) => {
+    db.initDB();
+    res.json(db.usuario);
+  });
+
+  var app = express();
+
+app.use(express.static(__dirname + '/'))
+   .use(cors())
+   .use(cookieParser());*/
+
 $(function(){
   console.log("entre a la funcion");
   var token = '2117516145.e1bcbd5.1b8ef9aacdd443709adcd634e1f435dd',
@@ -26,6 +69,7 @@ $(function(){
     container2 = document.getElementById( 'userinfo' ),
     scrElement2 = document.createElement( 'script' );
 
+  
     $('#ok').on('click', function(evento){
       evento.preventDefault();
       $.ajax({
@@ -55,7 +99,7 @@ $(function(){
     document.body.appendChild( scrElement2 );
 
 
-
+   
    /* $('#info').on('click', function(evento){
       evento.preventDefault();
       $.ajax({
