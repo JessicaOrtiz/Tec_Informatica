@@ -19,7 +19,6 @@ $.ajax({
   }
 });*/
 
-//const archivos = require('fs');
 $(function(){
   console.log("entre a la funcion");
   var token = '2117516145.e1bcbd5.1b8ef9aacdd443709adcd634e1f435dd',
@@ -45,6 +44,7 @@ $(function(){
       }
     }
 
+  
     $('#ok').on('click', function(evento){
       evento.preventDefault();
       $.ajax({
@@ -98,6 +98,7 @@ $(function(){
           alert("Alumno guardado.");
           //Actualizamos la lista html para ver los cambios.
         //  getAlumnos();
+
       });
     }
 });
